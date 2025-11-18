@@ -326,9 +326,14 @@
             .carousel-container { height: 140px; }
         }
 
-        /* Extend red background in S5 on mobile by +400px */
+        /* Extend red background in S5 on mobile by +500px */
         @media (max-width: 768px) {
-            .s5 { padding-bottom: 620px !important; }
+            .s5 { padding-bottom: 720px !important; }
+        }
+
+        /* Desktop-only: make S5 200px taller */
+        @media (min-width: 1025px) {
+            .s5 { padding-bottom: 420px !important; }
         }
     </style>
 
@@ -1123,6 +1128,15 @@
         window.addEventListener('resize', updateCarousel1);
     </script>
   </section>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2721,6 +2735,19 @@
         }
     }
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
