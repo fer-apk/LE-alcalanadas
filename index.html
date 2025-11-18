@@ -281,6 +281,8 @@
             }
         }
     </style>
+
+    
 </head>
 <body>
     <!-- Header -->
@@ -405,7 +407,6 @@
 
 
 
-
 <!-- 2da seccion scroll de provedores -->
 
 
@@ -477,6 +478,18 @@
       }
     </style>
   </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -659,6 +672,16 @@
             margin-right: 8px;
         }
 
+        /* Reduce font size ~15% only for specific card */
+        .seccion3 .card-wrapper1.small-font {
+            font-size: 0.85em;
+        }
+
+        /* Reduce font size ~15% more for specific card */
+        .seccion3 .card-wrapper1.smaller-font {
+            font-size: 0.7225em; /* 0.85 * 0.85 */
+        }
+
         .seccion3 .carousel-button {
             position: absolute;
             top: 50%;
@@ -790,8 +813,6 @@
                                 <h3>Galvateja</h3>
                                 <p>Lámina tipo teja, texturizada,  calibre 26, color rojo Janitzio.</p>
                                 <ul class="specs">
-                                    <li>Calibre 26 disponible</li>
-                                    <li>Acabado galvanizado</li>
                                     <li>Medidas personalizadas</li>
                                     <li>Excelente relación calidad-precio</li>
                                 </ul>
@@ -879,7 +900,7 @@
                     </div>
 
                     <!-- Producto 6 -->
-                    <div class="card-wrapper1">
+                    <div class="card-wrapper1 small-font">
                         <div class="flip-card" onclick="this.classList.toggle('flipped')">
                             <div class="card-face card-front">
                                 <div class="product-code">RD-91.5</div>
@@ -898,7 +919,7 @@
                     </div>
 
                     <!-- Producto 7 -->
-                    <div class="card-wrapper1">
+                    <div class="card-wrapper1 small-font">
                         <div class="flip-card" onclick="this.classList.toggle('flipped')">
                             <div class="card-face card-front">
                                 <div class="product-code">RN-100</div>
@@ -917,7 +938,7 @@
                     </div>
 
                     <!-- Producto 8 -->
-                    <div class="card-wrapper1">
+                    <div class="card-wrapper1 smaller-font">
                         <div class="flip-card" onclick="this.classList.toggle('flipped')">
                             <div class="card-face card-front">
                                 <div class="product-code">KR-18</div>
@@ -949,10 +970,6 @@
                                 <h3>R-45</h3>
                                 <p>Es un perfil con alta resistencia estructural de tipo engargolable, su fabricación parte de un rollo de 91.5 cm (36”). Es una lámina que se puede combar y su uso es muy variable para muros, techos, casetas, etc.</p>
                                 <ul class="specs">
-                                    <li>Acabados decorativos</li>
-                                    <li>Diseño contemporáneo</li>
-                                    <li>Múltiples texturas</li>
-                                    <li>Proyectos premium</li>
                                 </ul>
                             </div>
                         </div>
@@ -972,10 +989,6 @@
                                 <h3>R-66</h3>
                                 <p>Es un perfil con alta resistencia estructural de tipo engargolable, acanalados especiales su fabricación parte de un rollo de 91.5 cm (36”). Es una lámina que se puede combar y su uso es muy variable para muros, techos, casetas, etc.</p>
                                 <ul class="specs">
-                                    <li>Sistema entrepiso</li>
-                                    <li>Alta capacidad de carga</li>
-                                    <li>Instalación eficiente</li>
-                                    <li>Reduce tiempos de obra</li>
                                 </ul>
                             </div>
                         </div>
@@ -1065,6 +1078,2425 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+  <!-- seccion 4 -->
+  <section>
+    <style>
+        .seccion4-container {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #8B1E1E 0%, #B22222 100%);
+        }
+
+        .seccion4-hero {
+            background: linear-gradient(135deg, #8B1E1E 0%, #B22222 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .seccion4-hero h1 {
+            font-size: 2.5em;
+            margin: 0 0 40px 0;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .seccion4-content-wrapper {
+            display: flex;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 60px;
+            padding: 0 40px;
+        }
+
+        .seccion4-text-content {
+            flex: 1;
+            color: white;
+            text-align: left;
+        }
+
+        .seccion4-text-content h2 {
+            font-size: 2.2em;
+            margin: 0 0 30px 0;
+            line-height: 1.4;
+        }
+
+        .seccion4-text-content .seccion4-highlight {
+            color: #FF4444;
+            font-weight: 700;
+        }
+
+        .seccion4-text-content .seccion4-description {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #E0E0E0;
+            margin: 30px 0 40px 0;
+            line-height: 1.6;
+        }
+
+        .seccion4-whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #25D366;
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .seccion4-whatsapp-btn:hover {
+            background: #20BA5A;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .seccion4-whatsapp-icon {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        .seccion4-carousel-container {
+            flex: 1;
+            position: relative;
+            overflow: visible;
+            padding: 20px 0;
+        }
+
+        .seccion4-carousel-wrapper {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .seccion4-carousel-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+            width: 100%;
+        }
+
+        .seccion4-carousel-item {
+            flex-shrink: 0;
+            width: 450px;
+            height: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .seccion4-carousel-item.seccion4-side {
+            width: 120px;
+            height: 300px;
+            opacity: 0.6;
+            filter: brightness(0.7);
+        }
+
+        .seccion4-carousel-item.seccion4-active {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .seccion4-carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .seccion4-carousel-nav {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 3;
+        }
+
+        .seccion4-carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .seccion4-carousel-dot.seccion4-active-dot {
+            background: white;
+            width: 35px;
+            border-radius: 6px;
+        }
+
+        .seccion4-shadow-divider {
+            height: 30px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+            margin-top: 80px;
+        }
+
+        .seccion4-features {
+            background: white;
+            padding: 80px 20px;
+        }
+
+        .seccion4-features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 60px;
+        }
+
+        .seccion4-feature-item {
+            text-align: center;
+        }
+
+        .seccion4-feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            color: #B22222;
+        }
+
+        .seccion4-feature-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .seccion4-feature-divider {
+            width: 40px;
+            height: 2px;
+            background: #B22222;
+            margin: 15px auto;
+        }
+
+        .seccion4-feature-description {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1024px) {
+            .seccion4-content-wrapper {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .seccion4-text-content {
+                text-align: center;
+            }
+
+            .seccion4-carousel-item {
+                width: 350px;
+                height: 280px;
+            }
+
+            .seccion4-carousel-item.seccion4-side {
+                width: 100px;
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .seccion4-hero h1 {
+                font-size: 1.8em;
+            }
+
+            .seccion4-text-content h2 {
+                font-size: 1.6em;
+            }
+
+            .seccion4-carousel-item {
+                width: 280px;
+                height: 220px;
+            }
+
+            .seccion4-carousel-item.seccion4-side {
+                width: 80px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body class="seccion4-container">
+    <section class="seccion4-hero">
+        <h1>Ofrecemos Soluciones en Cubiertas Metálicas Diseñadas<br>para Resistir el Paso del Tiempo</h1>
+        
+        <div class="seccion4-content-wrapper">
+            <div class="seccion4-text-content">
+                <h2>
+                    Nuestras <span class="seccion4-highlight">Láminas Acanaladas</span> y especiales son<br>
+                    utilizadas en una <span class="seccion4-highlight">gran variedad</span> de <span class="seccion4-highlight">Proyectos<br>
+                    Industriales</span>, Comerciales y Residenciales.
+                </h2>
+                
+                <p class="seccion4-description">
+                    Gracias a su resistencia estructural y excelente<br>
+                    acabado, se adaptan a cualquier tipo de<br>
+                    construcción.
+                </p>
+                
+                <a href="#" class="seccion4-whatsapp-btn">
+                    <svg class="seccion4-whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    PIDE TU COTIZACIÓN
+                </a>
+            </div>
+
+            <div class="seccion4-carousel-container">
+                <div class="seccion4-carousel-wrapper">
+                    <div class="seccion4-carousel-track">
+                        <div class="seccion4-carousel-item seccion4-side">
+                            <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800" alt="Industrial 3" id="seccion4-img-prev">
+                        </div>
+                        <div class="seccion4-carousel-item seccion4-active">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800" alt="Industrial 1" id="seccion4-img-active">
+                        </div>
+                        <div class="seccion4-carousel-item seccion4-side">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800" alt="Industrial 2" id="seccion4-img-next">
+                        </div>
+                    </div>
+                </div>
+                <div class="seccion4-carousel-nav">
+                    <button class="seccion4-carousel-dot seccion4-active-dot" data-index="0"></button>
+                    <button class="seccion4-carousel-dot" data-index="1"></button>
+                    <button class="seccion4-carousel-dot" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="seccion4-shadow-divider"></div>
+
+    <section class="seccion4-features">
+        <div class="seccion4-features-grid">
+            <div class="seccion4-feature-item">
+                <svg class="seccion4-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                <h3 class="seccion4-feature-title">Durabilidad Garantizada</h3>
+                <div class="seccion4-feature-divider"></div>
+                <p class="seccion4-feature-description">
+                    Láminas Acanaladas<br>
+                    Galvanizadas y Pintro de<br>
+                    larga vida útil.
+                </p>
+            </div>
+
+            <div class="seccion4-feature-item">
+                <svg class="seccion4-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+                </svg>
+                <h3 class="seccion4-feature-title">Versatilidad Total</h3>
+                <div class="seccion4-feature-divider"></div>
+                <p class="seccion4-feature-description">
+                    Disponibles en distintos<br>
+                    Calibres y Perfiles.
+                </p>
+            </div>
+
+            <div class="seccion4-feature-item">
+                <svg class="seccion4-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                    <path d="M3 10h11M9 3v7"/>
+                </svg>
+                <h3 class="seccion4-feature-title">Entrega Inmediata</h3>
+                <div class="seccion4-feature-divider"></div>
+                <p class="seccion4-feature-description">
+                    Contamos con amplio<br>
+                    Stock y Envíos a todo<br>
+                    México.
+                </p>
+            </div>
+
+            <div class="seccion4-feature-item">
+                <svg class="seccion4-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    <circle cx="12" cy="12" r="2"/>
+                    <circle cx="19" cy="9" r="1.5"/>
+                    <circle cx="5" cy="9" r="1.5"/>
+                </svg>
+                <h3 class="seccion4-feature-title">Asesoría Técnica</h3>
+                <div class="seccion4-feature-divider"></div>
+                <p class="seccion4-feature-description">
+                    Te ayudamos a elegir la<br>
+                    Lámina Acanalada ideal<br>
+                    para tu proyecto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const seccion4Images = [
+            'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800',
+            'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800',
+            'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800'
+        ];
+
+        let seccion4CurrentIndex = 0;
+
+        function seccion4UpdateCarousel() {
+            const prevIndex = (seccion4CurrentIndex - 1 + seccion4Images.length) % seccion4Images.length;
+            const nextIndex = (seccion4CurrentIndex + 1) % seccion4Images.length;
+
+            document.getElementById('seccion4-img-prev').src = seccion4Images[prevIndex];
+            document.getElementById('seccion4-img-active').src = seccion4Images[seccion4CurrentIndex];
+            document.getElementById('seccion4-img-next').src = seccion4Images[nextIndex];
+
+            document.querySelectorAll('.seccion4-carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('seccion4-active-dot', index === seccion4CurrentIndex);
+            });
+        }
+
+        document.querySelectorAll('.seccion4-carousel-dot').forEach(dot => {
+            dot.addEventListener('click', () => {
+                seccion4CurrentIndex = parseInt(dot.dataset.index);
+                seccion4UpdateCarousel();
+            });
+        });
+
+        setInterval(() => {
+            seccion4CurrentIndex = (seccion4CurrentIndex + 1) % seccion4Images.length;
+            seccion4UpdateCarousel();
+        }, 4000);
+
+        seccion4UpdateCarousel();
+    </script>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--SECCIÓN 5 seccion de reseñas -->
+<section class="s5" style="overflow: visible; background: linear-gradient(135deg, #0a1429 0%, #AE1916 50%, #AE1916 100%); padding: 60px 0 220px; position: relative;">
+    <!-- Efectos de fondo -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.2) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 0%, transparent 50%);"></div>
+    
+    <div class="carousel-container">
+      <div class="header-image">
+        <img src="images/5ta seccion/logogoogle.webp" alt="Google">
+      </div>
+      <style>
+        .s5 .header-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .s5 .header-image img {
+            max-width: 350px;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .s5 .header-image img {
+                max-width: 250px;
+            }
+        }
+        @media (max-width: 480px) {
+            .s5 .header-image img {
+                max-width: 220px;
+            }
+        }
+    </style>
+
+
+
+
+        <h1 class="s5-title">Lo que Dicen Nuestros Clientes</h1>
+        <p class="subtitle">Experiencias reales de personas que confiaron en nosotros</p>
+        
+        <div class="carousel-wrapper s5-carousel-wrapper">
+            <button class="carousel-nav s5-carousel-nav prev" onclick="pauseAndResume()" aria-label="Diapositiva anterior">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                </svg>
+            </button>
+            
+            <div class="carousel-track s5-carousel-track">
+                <!-- Reseña 1 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me gustó mucho su atención al Cliente, te explican y aclaran todas tus dudas, los productos que manejan son de Excelente calidad y la entrega es rápida, volvería a solicitar con ellos 10/10"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-purple">P</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Priscila Carrillo</div>
+                            <div class="reviewer-meta">• hace 3 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 2 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente atención de todo el personal, muy amables y rápidos en el proceso."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-blue">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Torres</div>
+                            <div class="reviewer-meta">• hace 1 mes</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me encantó trabajar con este equipo. Son muy creativos y atentos a los detalles. El resultado final fue exactamente lo que buscaba."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-green">A</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Ana Martínez</div>
+                            <div class="reviewer-meta">• hace 3 semanas</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 4 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Cuentan con gran variedad de materiales de excelente calidad y excelente atención, recomendados, lo mejor"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-orange">K</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Kevin Palomar</div>
+                            <div class="reviewer-meta">• hace 2 Meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 5 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente lugar "
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-red">R</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Rafael Olmo</div>
+                            <div class="reviewer-meta">• hace 10 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 6 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente servicio, buena calidad, super recomendado, atención personalizada, muy recomendable!"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-teal">M</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Marcos Lomeli</div>
+                            <div class="reviewer-meta">• hace 2 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 7 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "El personal es muy atento y amable. Resolvieron todas mis dudas. Recibí el material sin ningún problema. Gran variedad de productos"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-pink">O</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Oliver Brandon</div>
+                            <div class="reviewer-meta">• hace 15 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 8 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Buenos precios y excelente atención."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-indigo">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Hernandez</div>
+                            <div class="reviewer-meta">• hace 10 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Duplicar las reseñas para el scroll infinito -->
+                <!-- Reseña 1 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me gustó mucho su atención al Cliente, te explican y aclaran todas tus dudas, los productos que manejan son de Excelente calidad y la entrega es rápida, volvería a solicitar con ellos 10/10"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-purple">P</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Priscila Carrillo</div>
+                            <div class="reviewer-meta">• hace 3 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 2 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente atención de todo el personal, muy amables y rápidos en el proceso."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-blue">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Torres</div>
+                            <div class="reviewer-meta">• hace 1 mes</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me encantó trabajar con este equipo. Son muy creativos y atentos a los detalles. El resultado final fue exactamente lo que buscaba."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-green">A</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Ana Martínez</div>
+                            <div class="reviewer-meta">• hace 3 semanas</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 4 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Cuentan con gran variedad de materiales de excelente calidad y excelente atención, recomendados, lo mejor"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-orange">K</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Kevin Palomar</div>
+                            <div class="reviewer-meta">• hace 2 Meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 5 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente lugar "
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-red">R</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Rafael Olmo</div>
+                            <div class="reviewer-meta">• hace 10 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 6 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente servicio, buena calidad, super recomendado, atención personalizada, muy recomendable!"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-teal">M</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Marcos Lomeli</div>
+                            <div class="reviewer-meta">• hace 2 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 7 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "El personal es muy atento y amable. Resolvieron todas mis dudas. Recibí el material sin ningún problema. Gran variedad de productos"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-pink">O</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Oliver Brandon</div>
+                            <div class="reviewer-meta">• hace 15 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 8 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Buenos precios y excelente atención."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-indigo">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Hernandez</div>
+                            <div class="reviewer-meta">• hace 10 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-nav s5-carousel-nav next" onclick="pauseAndResume()" aria-label="Siguiente diapositiva">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6-6 6-1.41-1.41z"/>
+                </svg>
+            </button>
+        </div>
+
+        <script>
+            function pauseAndResume() {
+                var track = document.querySelector('.s5 .carousel-track');
+                if (track) {
+                    track.classList.toggle('paused');
+                }
+            }
+        </script>
+
+        <!-- Estadísticas -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">4.8</div>
+                <div class="stat-label">Calificación promedio</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Reseñas verificadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Clientes satisfechos</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: #f8fafc;
+    }
+
+    .s5 .carousel-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 20px;
+        z-index: 2;
+        overflow: visible;
+    }
+
+    .s5 .header-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .s5 .s5-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 15px;
+        letter-spacing: -0.02em;
+        text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .s5 .subtitle {
+        font-size: 1.2rem;
+        color: rgba(255,255,255,0.9);
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 400;
+    }
+
+    .s5 .carousel-wrapper {
+        position: relative;
+        overflow: visible;
+        border-radius: 24px;
+        background: white;
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 30px 30px 20px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        min-height: unset;
+    }
+
+    .s5 .carousel-track {
+        display: flex;
+        gap: 25px;
+        animation: s5-infiniteScroll 60s linear infinite;
+        width: calc(320px * 12 + 25px * 11);
+    }
+
+    .s5 .carousel-track:hover {
+        animation-play-state: paused;
+    }
+
+    /* Allow manual pause via class */
+    .s5 .carousel-track.paused {
+        animation-play-state: paused;
+    }
+
+    @keyframes s5-infiniteScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-320px * 8 - 25px * 7));
+        }
+    }
+
+    .s5 .review-card {
+        min-width: 320px;
+        max-width: 320px;
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 28px;
+        border: 1px solid rgba(255,255,255,0.2);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .s5 .review-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
+    }
+
+    .s5 .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        background: rgba(255,255,255,0.98);
+    }
+
+    .s5 .stars {
+        display: flex;
+        margin-bottom: 18px;
+        gap: 3px;
+    }
+
+    .s5 .star {
+        width: 18px;
+        height: 18px;
+        font-size: 18px;
+        transition: all 0.2s ease;
+    }
+
+    .s5 .star.filled {
+        color: #fbbf24;
+        text-shadow: 0 1px 3px rgba(251,191,36,0.3);
+    }
+
+    .s5 .star.empty {
+        color: #e5e7eb;
+    }
+
+    .s5 .review-card:hover .star.filled {
+        transform: scale(1.1);
+    }
+
+    .s5 .review-text {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #374151;
+        margin-bottom: 20px;
+        min-height: 80px;
+        font-weight: 400;
+    }
+
+    .s5 .reviewer-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .s5 .reviewer-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        flex-shrink: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .s5 .reviewer-details {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .s5 .reviewer-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 4px;
+    }
+
+    .s5 .reviewer-meta {
+        font-size: 13px;
+        color: #6b7280;
+    }
+
+    .s5 .platform-badge {
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .s5 .platform-badge.google {
+        background: linear-gradient(135deg, #4285f4, #34a853);
+        color: white;
+    }
+
+    .s5 .platform-badge.facebook {
+        background: linear-gradient(135deg, #1877f2, #42a5f5);
+        color: white;
+    }
+
+    .s5 .platform-badge.trustpilot {
+        background: linear-gradient(135deg, #00b67a, #73cf42);
+        color: white;
+    }
+
+    .s5 .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+
+    .s5 .carousel-nav:hover {
+        background: rgba(255,255,255,1);
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+    }
+
+    .s5 .carousel-nav.prev {
+        left: -70px;
+    }
+
+    .s5 .carousel-nav.next {
+        right: -70px;
+    }
+
+    .s5 .carousel-nav svg {
+        width: 24px;
+        height: 24px;
+        fill: #374151;
+    }
+
+    .s5 .stats {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 24px;
+        flex-wrap: wrap;
+    }
+
+    .s5 .stat-item {
+        text-align: center;
+    }
+
+    .s5 .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 8px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .s5 .stat-label {
+        font-size: 0.95rem;
+        color: rgba(255,255,255,0.8);
+        font-weight: 500;
+    }
+
+    /* Avatares con colores */
+    .s5 .avatar-purple { background: linear-gradient(135deg, #8b5cf6, #a855f7); }
+    .s5 .avatar-blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+    .s5 .avatar-green { background: linear-gradient(135deg, #10b981, #059669); }
+    .s5 .avatar-orange { background: linear-gradient(135deg, #f97316, #ea580c); }
+    .s5 .avatar-red { background: linear-gradient(135deg, #ef4444, #dc2626); }
+    .s5 .avatar-teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
+    .s5 .avatar-pink { background: linear-gradient(135deg, #ec4899, #db2777); }
+    .s5 .avatar-indigo { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+        .s5 .carousel-nav {
+            display: none;
+        }
+        
+        .s5 .s5-title {
+            font-size: 2.8rem;
+        }
+        
+        .s5 .stats {
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .s5 .carousel-container {
+            padding: 0 15px;
+        }
+        
+        .s5 .review-card {
+            min-width: 280px;
+            max-width: 280px;
+            padding: 24px;
+        }
+        
+        .s5 .s5-title {
+            font-size: 2.2rem;
+        }
+        
+        .s5 .subtitle {
+            font-size: 1.1rem;
+        }
+        
+        .s5 .carousel-wrapper {
+            padding: 20px;
+        }
+        
+        @keyframes s5-infiniteScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-280px * 8 - 25px * 7));
+            }
+        }
+        
+        .s5 .stats {
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .s5 .stat-number {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .s5 .review-card {
+            min-width: 260px;
+            max-width: 260px;
+            padding: 20px;
+        }
+        
+        .s5 .s5-title {
+            font-size: 1.8rem;
+        }
+        
+        .s5 .stats {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+    
+    .s5 .carousel-container {
+        max-width: 2000px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .s5 .s5-title {
+        font-size: 50px;
+        font-weight: 400;
+        color: #FFFFFF; /* Changed to white for better contrast */
+        margin-bottom: 30px;
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Added subtle text shadow for better readability */
+    }
+
+    .s5 .carousel-wrapper {
+        position: relative;
+        overflow: visible;
+        border-radius: 16px;
+        background: white;
+        padding: 16px 16px 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        min-height: unset;
+    }
+
+    .s5 .carousel-track {
+        display: flex;
+        gap: 20px;
+        animation: s5-infiniteScroll 45s linear infinite;
+        width: calc(280px * 18 + 20px * 17); /* 9 cards * 2 + gaps */
+    }
+
+    .s5 .carousel-track:hover {
+        animation-play-state: paused;
+    }
+
+    .s5 .carousel-track.paused {
+        animation-play-state: paused;
+    }
+
+    @keyframes s5-infiniteScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-280px * 9 - 20px * 8)); /* Width of original 9 cards + gaps */
+        }
+    }
+
+    .s5 .review-card {
+        min-width: 280px;
+        max-width: 280px;
+        background: white;
+        border-radius: 12px;
+        padding: 25px 20px;
+        border: 1px solid #e8eaed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 10px 0;
+    }
+
+    .s5 .review-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .s5 .stars {
+        display: flex;
+        margin-bottom: 15px;
+        gap: 2px;
+    }
+
+    .s5 .star {
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+    }
+
+    .s5 .star.filled {
+        color: #fbbc04;
+    }
+
+    .s5 .star.empty {
+        color: #e0e0e0;
+    }
+
+    .s5 .review-text {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #3c4043;
+        margin-bottom: 15px;
+        min-height: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .s5 .reviewer-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .s5 .reviewer-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    .s5 .reviewer-details {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .s5 .reviewer-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3c4043;
+        margin-bottom: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .s5 .reviewer-meta {
+        font-size: 12px;
+        color: #70757a;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .s5 .google-icon {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .s5 .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        background: rgb(40, 5, 167);
+        border: 1px solid #023292;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
+        z-index: 10;
+    }
+
+    .s5 .carousel-nav:hover {
+        background: #04417d;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-color: #1a73e8;
+    }
+
+    .s5 .carousel-nav.prev {
+        left: -60px;
+    }
+
+    .s5 .carousel-nav.next {
+        right: -60px;
+    }
+
+    .s5 .carousel-nav svg {
+        width: 20px;
+        height: 20px;
+        fill: #5f6368;
+        transition: fill 0.2s ease;
+    }
+
+    .s5 .carousel-nav:hover svg {
+        fill: #1a73e8;
+    }
+
+    /* Avatares con colores */
+    .s5 .avatar-purple { background: linear-gradient(135deg, #9c27b0, #e91e63); }
+    .s5 .avatar-red { background: linear-gradient(135deg, #f44336, #ff5722); }
+    .s5 .avatar-orange { background: linear-gradient(135deg, #ff9800, #ff5722); }
+    .s5 .avatar-blue { background: linear-gradient(135deg, #2196f3, #3f51b5); }
+    .s5 .avatar-green { background: linear-gradient(135deg, #4caf50, #8bc34a); }
+
+    /* Control de pausa */
+    .s5 .pause-control {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(17, 0, 201, 0.9);
+        border: 1px solid #e0e0e0;
+        border-radius: 20px;
+        padding: 8px 12px;
+        font-size: 12px;
+        color: #666;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .s5 .pause-control:hover {
+        background: rgb(10, 23, 201);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .s5 .carousel-container {
+            padding: 0 10px;
+        }
+        
+        .s5 .carousel-nav {
+            display: none;
+        }
+        
+        .s5 .review-card {
+            min-width: 260px;
+            max-width: 260px;
+        }
+        
+        @keyframes s5-infiniteScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-260px * 9 - 20px * 8));
+            }
+        }
+
+        .s5 .s5-title {
+            font-size: 24px;
+        }
+        .s5 .image-carousel {
+            width: 150px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .s5 .review-card {
+            min-width: 240px;
+            max-width: 240px;
+            padding: 16px;
+        }
+
+        .s5 .carousel-wrapper {
+            padding: 15px;
+        }
+        .s5 .image-carousel {
+            width: 150px;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 6ta seccion ya cuentas con cotizacion -->
+<style>
+        .seccion6-container {
+            width: 100%;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+
+        .seccion6-content {
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .seccion6-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .seccion6-subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .seccion6-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .seccion6-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 18px 50px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            min-width: 250px;
+        }
+
+        .seccion6-btn-whatsapp {
+            background: #25D366;
+        }
+
+        .seccion6-btn-whatsapp:hover {
+            background: #20bd5a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .seccion6-btn-call {
+            background: #c41e3a;
+        }
+
+        .seccion6-btn-call:hover {
+            background: #a51830;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+        }
+
+        .seccion6-icon {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        @media (max-width: 768px) {
+            .seccion6-title {
+                font-size: 1.8rem;
+            }
+
+            .seccion6-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .seccion6-buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .seccion6-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="seccion6-container">
+        <div class="seccion6-content">
+            <h2 class="seccion6-title">
+                Ofrecemos Cobertura Nacional, Servicio<br>
+                Confiable y Calidad Certificada
+            </h2>
+            <p class="seccion6-subtitle">
+                Resolvemos tus dudas en minutos por WhatsApp o llamada directa.
+            </p>
+            <div class="seccion6-buttons">
+                <a href="https://wa.me/1234567890" class="seccion6-btn seccion6-btn-whatsapp" target="_blank">
+                    <svg class="seccion6-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Mensaje
+                </a>
+                <a href="tel:+1234567890" class="seccion6-btn seccion6-btn-call">
+                    <svg class="seccion6-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                    </svg>
+                    Llamada
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- seccion 7 SUCURSALES -->
+ <section class="sucursales">
+    <h2>Nuestras Sucursales</h2>
+    <p class="sucursales-subtitle" style="color: #1a1a1a;">Visítanos en cualquiera de nuestras ubicaciones en Jalisco y Colima</p>
+    
+    <div class="sucursales-container">
+      <!-- Pestañas de navegación -->
+      <div class="sucursales-tabs">
+        <button class="tab-btn active" style="background-color: #AE1916; color: #1a1a1a; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="panel-periferico">Panel Periférico</button>
+        <button class="tab-btn" style="background-color: #AE1916; color: #1a1a1a; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="periferico">Periférico</button>
+        <button class="tab-btn" style="background-color: #AE1916; color: #1a1a1a; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="colima">Colima</button>
+      </div>
+      
+      <!-- Contenido de las pestañas -->
+      <div class="sucursales-content">
+        <!-- Sucursal Panel Periférico -->
+        <div class="tab-content active" id="panel-periferico">
+          <div class="sucursal-info">
+            <h3>SUCURSAL PANEL PERIFÉRICO</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #AE1916;"></i> Av. Periférico Pte. Manuel Gómez Morin 2880<br>Paraísos del Colli CP. 45069 Zapopan, Jal.</p>
+            <p><i class="fas fa-phone" style="color: #AE1916;"></i> <a href="tel:3319590140">33 1959 0140</a></p>
+            <p><i class="fas fa-envelope" style="color: #AE1916;"></i> <a href="mailto:ventas@lesamx.com">ventas@lesamx.com</a></p>
+            <a href="https://www.google.com/maps/place/Av+Perif%C3%A9rico+Pte+Manuel+G%C3%B3mez+Morin+2880,+Para%C3%ADsos+del+Colli,+45069+Zapopan,+Jal.,+M%C3%A9xico/@20.6907,-103.4185,17z/data=!3m1!4b1!4m5!3m4!1s0x8428ae4a6f0f2f1f:0x1c9f1c9f1c9f1c9f!8m2!3d20.6907!4d-103.4185" target="_blank" class="ver-mapa" style="color: #AE1916;">
+              <i class="fas fa-map-marked-alt" style="color: #AE1916;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6544!2d-103.4208!3d20.6907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4a6f0f2f1f%3A0x1c9f1c9f1c9f1c9f!2sAv%20Perif%C3%A9rico%20Pte%20Manuel%20G%C3%B3mez%20Morin%202880%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Panel Periférico"></iframe>
+          </div>
+        </div>
+        
+        <!-- Sucursal Periférico -->
+        <div class="tab-content" id="periferico">
+          <div class="sucursal-info">
+            <h3>SUCURSAL PERIFÉRICO</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #AE1916;"></i> Av. Perif. Pte. Manuel Gómez Morin 2790-D<br>Paraísos del Colli CP. 45069 Zapopan, Jal.</p>
+            <p><i class="fas fa-phone" style="color: #AE1916;"></i> <a href="tel:3319590140">33 1959 0140</a></p>
+            <p><i class="fas fa-envelope" style="color: #AE1916;"></i> <a href="mailto:ventas@lesamx.com">ventas@lesamx.com</a></p>
+            <a href="https://www.google.com/maps/place/Av+Perif%C3%A9rico+Pte+Manuel+G%C3%B3mez+Morin+2790-D,+Para%C3%ADsos+del+Colli,+45069+Zapopan,+Jal.,+M%C3%A9xico/@20.6910,-103.4200,17z/data=!3m1!4b1!4m5!3m4!1s0x8428ae4a6f0f2f1f:0x1c9f1c9f1c9f1c9f!8m2!3d20.6910!4d-103.4200" target="_blank" class="ver-mapa" style="color: #AE1916;">
+              <i class="fas fa-map-marked-alt" style="color: #AE1916;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6544!2d-103.4208!3d20.6910!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4a6f0f2f1f%3A0x1c9f1c9f1c9f1c9f!2sAv%20Perif%C3%A9rico%20Pte%20Manuel%20G%C3%B3mez%20Morin%202790-D%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Periférico"></iframe>
+          </div>
+        </div>
+        
+        <!-- Sucursal Juan Gil Preciado -->
+        <div class="tab-content" id="juan-gil">
+          <div class="sucursal-info">
+            <h3>SUCURSAL JUAN GIL PRECIADO</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #AE1916;"></i> Lat. Juan Gil Preciado 4176<br>Hogares de Nuevo México CP. 45160 Zapopan, Jal.</p>
+            <p><i class="fas fa-phone" style="color: #AE1916;"></i> <a href="tel:3319590140">33 1959 0140</a></p>
+            <p><i class="fas fa-envelope" style="color: #AE1916;"></i> <a href="mailto:ventas@lesamx.com">ventas@lesamx.com</a></p>
+            <a href="https://www.google.com/maps/place/Lat+Juan+Gil+Preciado+4176,+Hogares+de+Nuevo+M%C3%A9xico,+45160+Zapopan,+Jal.,+M%C3%A9xico/@20.6745,-103.4567,17z/data=!3m1!4b1!4m5!3m4!1s0x8428b3f9f9f9f9f9:0x1c9f1c9f1c9f1c9f!8m2!3d20.6745!4d-103.4567" target="_blank" class="ver-mapa" style="color: #AE1916;">
+              <i class="fas fa-map-marked-alt" style="color: #AE1916;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1234!2d-103.4589!3d20.6745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sLat%20Juan%20Gil%20Preciado%204176%2C%20Hogares%20de%20Nuevo%20M%C3%A9xico%2C%2045160%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Juan Gil Preciado"></iframe>
+          </div>
+        </div>
+        
+        <!-- Sucursal Punto Sur -->
+        <div class="tab-content" id="punto-sur">
+          <div class="sucursal-info">
+            <h3>SUCURSAL PUNTO SUR</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #AE1916;"></i> Av. Camino Real a Colima 150<br>CP. 45602 San Pedro Tlaquepaque</p>
+            <p><i class="fas fa-phone" style="color: #AE1916;"></i> <a href="tel:3319590140">33 1959 0140</a></p>
+            <p><i class="fas fa-envelope" style="color: #AE1916;"></i> <a href="mailto:ventas@lesamx.com">ventas@lesamx.com</a></p>
+            <a href="https://www.google.com/maps/place/Av+Camino+Real+a+Colima+150,+San+Pedro+Tlaquepaque,+Jal.,+M%C3%A9xico/@20.6083,-103.4187,17z/data=!3m1!4b1!4m5!3m4!1s0x8428b3f9f9f9f9f9:0x1c9f1c9f1c9f1c9f!8m2!3d20.6083!4d-103.4187" target="_blank" class="ver-mapa" style="color: #AE1916;">
+              <i class="fas fa-map-marked-alt" style="color: #AE1916;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.6789!2d-103.4209!3d20.6083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sAv%20Camino%20Real%20a%20Colima%20150%2C%20San%20Pedro%20Tlaquepaque%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Punto Sur"></iframe>
+          </div>
+        </div>
+        
+        <!-- Sucursal Colima -->
+        <div class="tab-content" id="colima">
+          <div class="sucursal-info">
+            <h3>SUCURSAL COLIMA</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #AE1916;"></i> Blvrd Camino Real 670<br>Residencial Los Olivos El Provenir II<br>CP. 28019 Col, Colima.</p>
+            <p><i class="fas fa-phone" style="color: #AE1916;"></i> <a href="tel:3319590140">33 1959 0140</a></p>
+            <p><i class="fas fa-envelope" style="color: #AE1916;"></i> <a href="mailto:ventas@lesamx.com">ventas@lesamx.com</a></p>
+            <a href="https://www.google.com/maps/place/Blvd+Camino+Real+670,+Residencial+Los+Olivos,+28019+Colima,+Col.,+M%C3%A9xico/@19.2678,-103.7229,17z/data=!3m1!4b1!4m5!3m4!1s0x84255e9f9f9f9f9f:0x1c9f1c9f1c9f1c9f!8m2!3d19.2678!4d-103.7229" target="_blank" class="ver-mapa" style="color: #AE1916;">
+              <i class="fas fa-map-marked-alt" style="color: #AE1916;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.7890!2d-103.7251!3d19.2678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255e9f9f9f9f9f%3A0x1c9f1c9f1c9f1c9f!2sBlvd%20Camino%20Real%20670%2C%20Residencial%20Los%20Olivos%2C%2028019%20Colima%2C%20Col.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Colima"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sucursales-note">
+      <p><i class="fas fa-truck"></i> Realizamos envíos a toda la república mexicana</p>
+    </div>
+  </section>
+  
+  <style>
+    /* Estilos para la sección de sucursales */
+    .sucursales {
+      padding: 3rem 5%;
+      background-color: #909090;
+    }
+  
+    .sucursales h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+    }
+  
+    .sucursales-subtitle {
+      text-align: center;
+      color: #A4A5A5;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+  
+    .sucursales-container {
+      background: #FFFFFF;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+    }
+  
+    .sucursales-tabs {
+      display: flex;
+      overflow-x: auto;
+      background: #FFFFFF;
+      padding: 0.5rem;
+      gap: 0.5rem;
+      scrollbar-width: thin;
+      scrollbar-color: #ffffff #FFFFFF;
+    }
+  
+    .sucursales-tabs::-webkit-scrollbar {
+      height: 6px;
+    }
+  
+    .sucursales-tabs::-webkit-scrollbar-thumb {
+      background-color: #FFFFFF;
+      border-radius: 3px;
+    }
+  
+    .tab-btn {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      background:FFFFFF;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #909090;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    .tab-btn:hover {
+      background: #FFFFFF;
+    }
+  
+    .tab-btn.active {
+      background: #FFFFFF;
+      color:FFFFFF;
+      box-shadow: 0 4px 8px rgba(30,190,93,0.3);
+    }
+  
+    .sucursales-content {
+      position: relative;
+      min-height: 400px;
+    }
+  
+    .tab-content {
+      display: none;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 2rem;
+      padding: 2rem;
+      animation: fadeIn 0.5s ease;
+    }
+  
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    .tab-content.active {
+      display: grid;
+    }
+  
+    .sucursal-info {
+      padding: 1rem;
+    }
+  
+    .sucursal-info h3 {
+      color: #222;
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      position: relative;
+      padding-bottom: 0.8rem;
+    }
+  
+    .sucursal-info h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #E0F5F0;
+    }
+  
+    .sucursal-info p {
+      margin: 1rem 0;
+      color: #555;
+      line-height: 1.6;
+    }
+  
+    .sucursal-info i {
+      color: #E0F5F0;
+      width: 20px;
+      margin-right: 10px;
+    }
+  
+    .sucursal-info a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  
+    .sucursal-info a:hover {
+      color: #000000;
+    }
+  
+    .ver-mapa {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background: #E0F5F0;
+      color: black !important;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none !important;
+    }
+  
+    .ver-mapa:hover {
+      background: #E0F5F0;
+      color:FFFFFF !important;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(30,190,93,0.3);
+    }
+  
+    .ver-mapa i {
+      margin-right: 8px;
+      transition: all 0.3s ease;
+    }
+  
+    .ver-mapa:hover i {
+      color:FFFFFF !important;
+    }
+  
+    .sucursal-mapa {
+      height: 400px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .sucursales-note {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #FFFFFF;
+      border-radius: 8px;
+      color: BLACK;
+      font-weight: 500;
+    }
+  
+    .sucursales-note i {
+      margin-right: 8px;
+      color: #E0F5F0;
+    }
+  
+    /* Ajustes responsivos para la sección de sucursales */
+    @media (max-width: 992px) {
+      .tab-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .sucursal-mapa {
+        height: 300px;
+        margin-top: 1.5rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .sucursales {
+        padding: 2rem 4%;
+      }
+      
+      .sucursales h2 {
+        font-size: 1.8rem;
+      }
+      
+      .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .sucursales {
+        padding: 1.5rem 3%;
+      }
+      
+      .sucursales h2 {
+        font-size: 1.6rem;
+      }
+      
+      .tab-content {
+        padding: 1rem;
+      }
+      
+      .sucursal-info h3 {
+        font-size: 1.2rem;
+      }
+      
+      .ver-mapa {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+  
+  <script>
+  // Funcionalidad de pestañas para sucursales
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    // Mostrar la primera pestaña por defecto
+    if (tabContents.length > 0) {
+      tabContents[0].classList.add('active');
+    }
+    
+    // Manejar clic en las pestañas
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const tabId = button.getAttribute('data-tab');
+        
+        // Remover clase active de todos los botones y contenidos
+        tabButtons.forEach(btn => {
+          btn.style.backgroundColor = '#8AD949';
+          btn.style.color = '#1a1a1a';
+          btn.style.border = '1px solid #08be57';
+        });
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Agregar estilos al botón activo
+        button.style.backgroundColor = '#8AD949';
+        button.style.color = 'white';
+        button.style.border = '1px solid #08be57';
+        
+        // Mostrar el contenido correspondiente
+        document.getElementById(tabId).classList.add('active');
+        
+        // Hacer scroll suave hacia la sección de sucursales
+        document.querySelector('.sucursales').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+  });
+  </script>
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-text">Laminas Especializadas</div>
+          <p class="footer-tagline">Calidad Industrial</p>
+        </div>
+        
+        <!-- Acciones rápidas (solo móvil) -->
+        <div class="footer-actions" aria-label="Acciones rápidas">
+          <a class="btn-action btn-call" href="tel:3319590140"><i class="fas fa-phone"></i> Llamar</a>
+          <a class="btn-action btn-wa" href="https://wa.me/3319590140" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+
+        <div class="footer-info">
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p><i class="fas fa-phone"></i> 33 1959 0140</p>
+            <p><i class="fas fa-envelope"></i> ventas@lesamx.com</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Sucursales</h4>
+            <p>Jalisco y Colima</p>
+            <p>Entregas a toda la República</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Productos</h4>
+            <p>KR-18 Galvanizada</p>
+            <p>Cintas Industriales</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 KR-18 - Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* Footer Styles */
+    .footer {
+      background: linear-gradient(5deg, #706F6F 0%, #706F6F 100%);
+      color: #606060;
+      padding: 0;
+      margin-top: 0;
+      position: relative;
+      overflow-x: hidden; /* evita desbordes horizontales */
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #706F6F, #706F6F, #706F6F, #706F6F);
+      opacity: 0.8;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem 2rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-logo {
+      text-align: left;
+    }
+
+    .logo-text {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(45deg, #606060, #606060);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    .logo-text::before {
+      content: '▶';
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      color: #706F6F;
+      font-size: 1.5rem;
+    }
+
+    .footer-tagline {
+      font-size: 1.1rem;
+      color: BLACK;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .footer-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-section h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: BLACK;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .footer-section h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .footer-section p {
+      margin: 0.5rem 0;
+      color: BLACK;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-section i {
+      width: 16px;
+      opacity: 0.7;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      color: BLACK;
+      font-size: 0.9rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: BLACK;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-social a:hover {
+      background: BLACK;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-social i {
+      font-size: 1.1rem;
+    }
+
+    /* Acciones rápidas (móvil) */
+    .footer-actions { display: none; }
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      color: BLACK;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .btn-action:active { transform: scale(0.98); }
+    .btn-call { background: BLACK; }
+    .btn-wa { background: BLACK; }
+
+    /* Responsive Footer */
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .footer-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo-text {
+        font-size: 2rem;
+      }
+
+      .logo-text::before {
+        left: -30px;
+        font-size: 1.2rem;
+      }
+      /* Mejoras extra para móvil (<=768px) */
+      .footer-logo { text-align: center; }
+      .logo-text::before { display: none; }
+      .footer-section h4 { margin-bottom: 0.5rem; }
+      .footer-section p { justify-content: center; }
+      .footer-social { justify-content: center; }
+      .footer-social a { width: 48px; height: 48px; }
+      .footer-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    }
+
+    @media (max-width: 480px) {
+      .footer-container {
+        padding: 2rem 1rem 1.5rem;
+      }
+
+      .footer-info { gap: 1rem; }
+
+      .footer-section h4 {
+        font-size: 1.1rem;
+      }
+
+      .footer-section p {
+        font-size: 0.9rem;
+      }
+      /* Ajustes finos para pantallas muy pequeñas (<=480px) */
+      .footer-content { gap: 1.5rem; }
+      .footer-bottom { gap: 0.75rem; }
+      .footer-social a { width: 52px; height: 52px; }
+      .logo-text { font-size: 1.8rem; }
+      /* Rediseño compacto: escondemos detalle y dejamos acciones rápidas */
+      .footer-info { display: none; }
+      .footer-actions { display: flex; }
+    }
+  </style>
 
 
 
