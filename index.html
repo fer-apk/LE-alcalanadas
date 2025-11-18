@@ -18,7 +18,7 @@
 
         /* Header */
         .header {
-            background-color: #c73232;
+            background-color: #AE1916;
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
@@ -32,17 +32,25 @@
         }
 
         .logo-circle {
-            background-color: white;
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
+            background-color: transparent;
+            width: auto;
+            height: auto;
+            border-radius: 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0;
+        }
+
+        .logo-circle .logo-img {
+            height: 56px;
+            width: auto;
+            object-fit: contain;
+            display: block;
         }
 
         .logo-text {
-            color: #c73232;
+            color: #AE1916;
             font-size: 28px;
             font-weight: bold;
         }
@@ -100,9 +108,10 @@
         /* Main Content */
         .main-content {
             display: flex;
-            padding: 60px 40px;
-            gap: 50px;
+            padding: 40px 40px 20px;
+            gap: 40px;
             align-items: center;
+            background-color: #878787;
         }
 
         .text-section {
@@ -113,20 +122,20 @@
         .title {
             font-size: 68px;
             font-weight: bold;
-            color: #c73232;
+            color: #AE1916;
             line-height: 1.1;
             margin-bottom: 10px;
         }
 
         .subtitle {
             font-size: 56px;
-            color: #666;
+            color: #333333;
             line-height: 1.2;
             margin-bottom: 30px;
         }
 
         .subtitle .highlight {
-            color: #c73232;
+            color: #AE1916;
             font-weight: bold;
         }
 
@@ -186,7 +195,7 @@
             position: relative;
             width: 100%;
             max-width: 600px;
-            height: 500px;
+            height: 360px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -280,6 +289,47 @@
                 font-size: 42px;
             }
         }
+
+        /* Mobile tweaks: prevent overflow and fit header/hero */
+        html, body { overflow-x: hidden; }
+
+        @media (max-width: 768px) {
+            .header { padding: 12px 16px; }
+            .logo-circle .logo-img { height: 40px; }
+            .contact-section { gap: 10px; }
+            .catalog-link { font-size: 16px; }
+            .phone-icon { width: 24px; height: 24px; }
+            .phone-number { font-size: 18px; }
+
+            /* Tighten hero height ~300px on mobile */
+            .main-content { padding: 8px 12px; gap: 12px; }
+            .text-section { padding-right: 0; }
+            .title { font-size: 44px; line-height: 1.15; margin-bottom: 8px; }
+            .subtitle { font-size: 36px; line-height: 1.25; margin-bottom: 12px; }
+            .description { font-size: 28px; margin-bottom: 14px; }
+            .features { display: none; }
+
+            .carousel-container {
+                max-width: 100%;
+                height: 160px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .catalog-link { display: none; }
+            .phone-link { gap: 8px; }
+            .phone-number { font-size: 16px; }
+            .logo-circle .logo-img { height: 36px; }
+
+            .title { font-size: 38px; }
+            .subtitle { font-size: 32px; }
+            .carousel-container { height: 140px; }
+        }
+
+        /* Extend red background in S5 on mobile by +400px */
+        @media (max-width: 768px) {
+            .s5 { padding-bottom: 620px !important; }
+        }
     </style>
 
     
@@ -289,11 +339,7 @@
     <header class="header">
         <div class="logo-section">
             <div class="logo-circle">
-                <span class="logo-text">LS</span>
-            </div>
-            <div class="brand-text">
-                <div class="line1">LÁMINAS</div>
-                <div class="line2">ESPECIALIZADAS</div>
+                <img src="images/logo/logo.webp" alt="Logo" class="logo-img">
             </div>
         </div>
         <div class="contact-section">
@@ -336,13 +382,13 @@
         <div class="carousel-section">
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=600&fit=crop" alt="Láminas acanaladas amarillas">
+                    <img src="images/1era seccion/Lamina-acanalada-gdl.webp" alt="Láminas acanaladas amarillas">
                 </div>
                 <div class="carousel-slide">
-                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop" alt="Techos industriales">
+                    <img src="images/1era seccion/Lamina-galvanizada-guadalajara.webp" alt="Techos industriales">
                 </div>
                 <div class="carousel-slide">
-                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=600&fit=crop" alt="Instalación de techos">
+                    <img src="images/1era seccion/techo-de-lamina-galvanizada.webp" alt="Instalación de techos">
                 </div>
                 
                 <div class="carousel-dots">
@@ -478,6 +524,10 @@
       }
     </style>
   </section>
+
+
+
+
 
 
 
@@ -1089,6 +1139,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   <!-- seccion 4 -->
   <section>
     <style>
@@ -1376,13 +1435,13 @@
                 <div class="seccion4-carousel-wrapper">
                     <div class="seccion4-carousel-track">
                         <div class="seccion4-carousel-item seccion4-side">
-                            <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800" alt="Industrial 3" id="seccion4-img-prev">
+                            <img src="images/Proyectos/proyecto1.webp" alt="Industrial 3" id="seccion4-img-prev">
                         </div>
                         <div class="seccion4-carousel-item seccion4-active">
-                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800" alt="Industrial 1" id="seccion4-img-active">
+                            <img src="images/Proyectos/proyecto2.webp" alt="Industrial 1" id="seccion4-img-active">
                         </div>
                         <div class="seccion4-carousel-item seccion4-side">
-                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800" alt="Industrial 2" id="seccion4-img-next">
+                            <img src="images/Proyectos/proyecto3.webp" alt="Industrial 2" id="seccion4-img-next">
                         </div>
                     </div>
                 </div>
@@ -1458,9 +1517,9 @@
 
     <script>
         const seccion4Images = [
-            'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800',
-            'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800',
-            'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800'
+            'images/Proyectos/proyecto1.webp',
+            'images/Proyectos/proyecto2.webp',
+            'images/Proyectos/proyecto3.webp'
         ];
 
         let seccion4CurrentIndex = 0;
