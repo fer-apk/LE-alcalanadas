@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- Favicon y meta tags -->
+    <!-- Favicon estándar -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Para navegadores modernos (recomendado también) -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<!-- Para Apple -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -347,15 +354,8 @@
         }
     </style>
     
-    <!-- Iconos Font Awesome para redes sociales del footer (carga no bloqueante) -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          as="style" crossorigin="anonymous"
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-              integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-              crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </noscript>
+    <!-- Iconos Font Awesome para redes sociales del footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -363,7 +363,7 @@
     <header class="header">
         <div class="logo-section">
             <div class="logo-circle">
-                <img src="images/logo/logo.webp" alt="Logo" class="logo-img" width="184" height="36" fetchpriority="high">
+                <img src="images/logo/logo.webp" alt="Logo" class="logo-img">
             </div>
         </div>
         <div class="contact-section">
@@ -406,13 +406,13 @@
         <div class="carousel-section">
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="images/1era seccion/Lamina-acanalada-gdl.webp" alt="Láminas acanaladas amarillas" width="600" height="360" fetchpriority="high">
+                    <img src="images/1era seccion/Lamina-acanalada-gdl.webp" alt="Láminas acanaladas amarillas">
                 </div>
                 <div class="carousel-slide">
-                    <img src="images/1era seccion/Lamina-galvanizada-guadalajara.webp" alt="Techos industriales" width="600" height="360" fetchpriority="high">
+                    <img src="images/1era seccion/Lamina-galvanizada-guadalajara.webp" alt="Techos industriales">
                 </div>
                 <div class="carousel-slide">
-                    <img src="images/1era seccion/techo-de-lamina-galvanizada.webp" alt="Instalación de techos" width="600" height="360" fetchpriority="high">
+                    <img src="images/1era seccion/techo-de-lamina-galvanizada.webp" alt="Instalación de techos">
                 </div>
                 
                 <div class="carousel-dots">
@@ -486,22 +486,22 @@
       <div class="marcas-track" style="display: flex; align-items: center; justify-content: space-around; animation: scroll 20s linear infinite; width: calc(250px * 10);">
         <!-- Logos de proveedores - se duplican para el efecto de scroll infinito -->
         <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/2da seccion/Logo_proveedor_isocindu.webp" alt="proveedor 1" style="height: 60px; width: auto; object-fit: contain; " loading="lazy" width="120" height="60">
+          <img src="images/2da seccion/Logo_proveedor_isocindu.webp" alt="proveedor 1" style="height: 60px; width: auto; object-fit: contain; ">
         </div>
         <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/2da seccion/Logo_Proveedor_Kingspan.webp" alt="proveedor 2" style="height: 60px; width: auto; object-fit: contain; " loading="lazy" width="120" height="60">
+          <img src="images/2da seccion/Logo_Proveedor_Kingspan.webp" alt="proveedor 2" style="height: 60px; width: auto; object-fit: contain; ">
         </div>
         <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/2da seccion/Logo_proveedor_owens.webp" alt="proveedor 3" style="height: 60px; width: auto; object-fit: contain; " loading="lazy" width="120" height="60">
+          <img src="images/2da seccion/Logo_proveedor_owens.webp" alt="proveedor 3" style="height: 60px; width: auto; object-fit: contain; ">
         </div>
         <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/2da seccion/Logo_proveedor_stabilit.webp" alt="proveedor 4" style="height: 60px; width: auto; object-fit: contain; " loading="lazy" width="120" height="60">
+          <img src="images/2da seccion/Logo_proveedor_stabilit.webp" alt="proveedor 4" style="height: 60px; width: auto; object-fit: contain; ">
         </div>
         <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/2da seccion/Logo_proveedor_Ternium.webp" alt="proveedor 5" style="height: 60px; width: auto; object-fit: contain; " loading="lazy" width="120" height="60">
+          <img src="images/2da seccion/Logo_proveedor_Ternium.webp" alt="proveedor 5" style="height: 60px; width: auto; object-fit: contain; ">
         </div>
         <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/2da seccion/Logo_proveedores_termofoam.webp" alt="proveedor 6" style="height: 60px; width: auto; object-fit: contain; " loading="lazy" width="120" height="60">
+          <img src="images/2da seccion/Logo_proveedores_termofoam.webp" alt="proveedor 6" style="height: 60px; width: auto; object-fit: contain; ">
         </div>
         <!-- Duplicar los logos para el efecto de scroll infinito -->
         <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
