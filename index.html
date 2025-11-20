@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Favicon estándar -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Para navegadores modernos (recomendado también) -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<!-- Para Apple -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Láminas Especializadas</title>
@@ -309,9 +318,17 @@
             .description { font-size: 28px; margin-bottom: 14px; }
             .features { display: none; }
 
+            /* Carrusel debajo del texto, centrado y más pequeño en móvil */
+            .carousel-section {
+                width: 100%;
+                margin-top: 8px;
+                display: flex;
+                justify-content: center;
+            }
+
             .carousel-container {
-                max-width: 100%;
-                height: 160px;
+                max-width: 90%;
+                height: 350px; /* altura aumentada (aprox. el doble de la original en móvil) */
             }
         }
 
@@ -323,7 +340,7 @@
 
             .title { font-size: 38px; }
             .subtitle { font-size: 32px; }
-            .carousel-container { height: 140px; }
+            .carousel-container { height: 300px; max-width: 100%; }
         }
 
         /* Extend red background in S5 on mobile by +500px */
@@ -3539,7 +3556,7 @@
       border-radius: 999px;
       text-decoration: none;
       font-weight: 600;
-      color: BLACK;
+      color: white;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
