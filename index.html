@@ -121,6 +121,9 @@
         .phone-number {
             font-size: 32px;
             font-weight: bold;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
         }
 
         /* Main Content */
@@ -138,18 +141,20 @@
         }
 
         .title {
-            font-size: 68px;
+            font-size: 64px;
             font-weight: bold;
             color: #AE1916;
             line-height: 1.1;
             margin-bottom: 10px;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.35);
         }
 
         .subtitle {
-            font-size: 56px;
+            font-size: 64px;
             color: #333333;
-            line-height: 1.2;
+            line-height: 1.1;
             margin-bottom: 30px;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.35);
         }
 
         .subtitle .highlight {
@@ -183,7 +188,7 @@
             display: inline-flex;
             align-items: center;
             gap: 15px;
-            background-color: #25d366;
+            background-color: #10b981; /* verde más fuerte tipo WhatsApp */
             color: white;
             text-decoration: none;
             padding: 20px 40px;
@@ -194,7 +199,7 @@
         }
 
         .cta-button:hover {
-            background-color: #20ba5a;
+            background-color: #059669;
         }
 
         .whatsapp-icon {
@@ -322,7 +327,7 @@
             /* Tighten hero height ~300px on mobile */
             .main-content { padding: 8px 12px; gap: 12px; }
             .text-section { padding-right: 0; }
-            .title { font-size: 44px; line-height: 1.15; margin-bottom: 8px; }
+            .title { font-size: 44px; line-height: 1.15; margin-bottom: 12px; }
             .subtitle { font-size: 36px; line-height: 1.25; margin-bottom: 12px; }
             .description { font-size: 28px; margin-bottom: 14px; }
             .features { display: none; }
@@ -347,7 +352,7 @@
             .phone-number { font-size: 16px; }
             .logo-circle .logo-img { height: 36px; }
 
-            .title { font-size: 38px; }
+            .title { font-size: 32px; }
             .subtitle { font-size: 32px; }
             .carousel-container { height: 300px; max-width: 100%; }
         }
@@ -498,7 +503,7 @@
 
 
 <!-- Carrusel de proveedores -->
-<section class="marcas-carousel" style="background-color: #909090; padding: 1.5rem 0; margin: 0; overflow: hidden;">
+<section class="marcas-carousel" style="background-color: white; padding: 1.5rem 0; margin: 0; overflow: hidden;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
       <div class="marcas-track" style="display: flex; align-items: center; justify-content: space-around; animation: scroll 20s linear infinite; width: calc(250px * 10);">
         <!-- Logos de proveedores - se duplican para el efecto de scroll infinito -->
@@ -684,7 +689,7 @@
         }
 
         .seccion3 .card-back {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #706F6F 0%, #878787 100%);
             transform: rotateY(180deg);
             display: flex;
             flex-direction: column;
@@ -832,7 +837,7 @@
             width: fit-content;
             margin: 60px auto 0;
             padding: 20px 60px;
-            background: #c41e3a;
+            background: #AE1916;
             color: white;
             text-decoration: none;
             border-radius: 50px;
@@ -843,7 +848,7 @@
         }
 
         .seccion3 .cta-button3:hover {
-            background: #a01828;
+            background: #AE1916;
             transform: translateY(-3px);
             box-shadow: 0 12px 35px rgba(196, 30, 58, 0.5);
         }
@@ -1209,11 +1214,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(180deg, #8B1E1E 0%, #B22222 100%);
+            background: linear-gradient(180deg, #AE1916 0%, #AE1916 100%);
         }
 
         .seccion4-hero {
-            background: linear-gradient(135deg, #8B1E1E 0%, #B22222 100%);
+            background: linear-gradient(135deg, #AE1916 0%, #AE1916 100%);
             padding: 60px 20px 40px;
             text-align: center;
             color: white;
@@ -1248,7 +1253,7 @@
         }
 
         .seccion4-text-content .seccion4-highlight {
-            color: #FF4444;
+            color: BLACK;
             font-weight: 700;
         }
 
@@ -1264,7 +1269,7 @@
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            background: #25D366;
+            background: #10b981;
             color: white;
             padding: 18px 35px;
             border-radius: 50px;
@@ -2842,6 +2847,7 @@
         .seccion6-title {
             font-size: 2.5rem;
             font-weight: 600;
+            font-size: 50px;
             color: #333;
             margin-bottom: 20px;
             line-height: 1.3;
@@ -2851,6 +2857,7 @@
             font-size: 1.3rem;
             color: #666;
             margin-bottom: 40px;
+            font-size: 30px;
         }
 
         .seccion6-buttons {
@@ -2878,21 +2885,21 @@
         }
 
         .seccion6-btn-whatsapp {
-            background: #25D366;
+            background: #10b981;
         }
 
         .seccion6-btn-whatsapp:hover {
-            background: #20bd5a;
+            background: #10b981;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
         }
 
         .seccion6-btn-call {
-            background: #c41e3a;
+            background: #AE1916;
         }
 
         .seccion6-btn-call:hover {
-            background: #a51830;
+            background: #AE1916;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
         }
@@ -2995,9 +3002,9 @@
     <div class="sucursales-container">
       <!-- Pestañas de navegación -->
       <div class="sucursales-tabs">
-        <button class="tab-btn active" style="background-color: #AE1916; color: #1a1a1a; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="panel-periferico">Panel Periférico</button>
-        <button class="tab-btn" style="background-color: #AE1916; color: #1a1a1a; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="periferico">Periférico</button>
-        <button class="tab-btn" style="background-color: #AE1916; color: #1a1a1a; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="colima">Colima</button>
+        <button class="tab-btn active" style="background-color: #AE1916; color: white; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="panel-periferico">Panel Periférico</button>
+        <button class="tab-btn" style="background-color: #AE1916; color: white; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="periferico">Periférico</button>
+        <button class="tab-btn" style="background-color: #AE1916; color: white; border: 1px solid #AE1916; padding: 10px 20px; font-weight: 600;" data-tab="colima">Colima</button>
       </div>
       
       <!-- Contenido de las pestañas -->
@@ -3014,7 +3021,7 @@
             </a>
           </div>
           <div class="sucursal-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6544!2d-103.4208!3d20.6907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4a6f0f2f1f%3A0x1c9f1c9f1c9f1c9f!2sAv%20Perif%C3%A9rico%20Pte%20Manuel%20G%C3%B3mez%20Morin%202880%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Panel Periférico"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6544!2d-103.4208!3d20.6907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4a6f0f2f1f%3A0x1c9f1c9f1c9f1c9f!2sAv%20Perif%C3%A9rico%20Pte%20Manuel%20G%C3%B3mez%20Morin%202880%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#AE1916" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Panel Periférico"></iframe>
           </div>
         </div>
         
@@ -3030,7 +3037,7 @@
             </a>
           </div>
           <div class="sucursal-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6544!2d-103.4208!3d20.6910!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4a6f0f2f1f%3A0x1c9f1c9f1c9f1c9f!2sAv%20Perif%C3%A9rico%20Pte%20Manuel%20G%C3%B3mez%20Morin%202790-D%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Periférico"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6544!2d-103.4208!3d20.6910!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4a6f0f2f1f%3A0x1c9f1c9f1c9f1c9f!2sAv%20Perif%C3%A9rico%20Pte%20Manuel%20G%C3%B3mez%20Morin%202790-D%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#AE1916" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Periférico"></iframe>
           </div>
         </div>
         
@@ -3046,7 +3053,7 @@
             </a>
           </div>
           <div class="sucursal-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1234!2d-103.4589!3d20.6745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sLat%20Juan%20Gil%20Preciado%204176%2C%20Hogares%20de%20Nuevo%20M%C3%A9xico%2C%2045160%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Juan Gil Preciado"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1234!2d-103.4589!3d20.6745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sLat%20Juan%20Gil%20Preciado%204176%2C%20Hogares%20de%20Nuevo%20M%C3%A9xico%2C%2045160%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#AE1916" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Juan Gil Preciado"></iframe>
           </div>
         </div>
         
@@ -3062,7 +3069,7 @@
             </a>
           </div>
           <div class="sucursal-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.6789!2d-103.4209!3d20.6083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sAv%20Camino%20Real%20a%20Colima%20150%2C%20San%20Pedro%20Tlaquepaque%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Punto Sur"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.6789!2d-103.4209!3d20.6083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sAv%20Camino%20Real%20a%20Colima%20150%2C%20San%20Pedro%20Tlaquepaque%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#AE1916" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Punto Sur"></iframe>
           </div>
         </div>
         
@@ -3078,7 +3085,7 @@
             </a>
           </div>
           <div class="sucursal-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.7890!2d-103.7251!3d19.2678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255e9f9f9f9f9f%3A0x1c9f1c9f1c9f1c9f!2sBlvd%20Camino%20Real%20670%2C%20Residencial%20Los%20Olivos%2C%2028019%20Colima%2C%20Col.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#8AD949" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Colima"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.7890!2d-103.7251!3d19.2678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255e9f9f9f9f9f%3A0x1c9f1c9f1c9f1c9f!2sBlvd%20Camino%20Real%20670%2C%20Residencial%20Los%20Olivos%2C%2028019%20Colima%2C%20Col.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#AE1916" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Colima"></iframe>
           </div>
         </div>
       </div>
@@ -3156,7 +3163,7 @@
     .tab-btn.active {
       background: #FFFFFF;
       color:FFFFFF;
-      box-shadow: 0 4px 8px rgba(30,190,93,0.3);
+      box-shadow: 0 4px 8px #AE1916;
     }
   
     .sucursales-content {
@@ -3345,16 +3352,16 @@
         
         // Remover clase active de todos los botones y contenidos
         tabButtons.forEach(btn => {
-          btn.style.backgroundColor = '#8AD949';
-          btn.style.color = '#1a1a1a';
-          btn.style.border = '1px solid #08be57';
+          btn.style.backgroundColor = '#ae1916';
+          btn.style.color = 'white';
+          btn.style.border = '1px solid #ae1916';
         });
         tabContents.forEach(content => content.classList.remove('active'));
         
         // Agregar estilos al botón activo
-        button.style.backgroundColor = '#8AD949';
+        button.style.backgroundColor = '#AE1916';
         button.style.color = 'white';
-        button.style.border = '1px solid #08be57';
+        button.style.border = '1px solid #AE1916';
         
         // Mostrar el contenido correspondiente
         document.getElementById(tabId).classList.add('active');
@@ -3427,11 +3434,7 @@
             <p>Entregas a toda la República</p>
           </div>
 
-          <div class="footer-section">
-            <h4>Productos</h4>
-            <p>KR-18 Galvanizada</p>
-            <p>Cintas Industriales</p>
-          </div>
+         
         </div>
       </div>
 
