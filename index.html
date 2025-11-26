@@ -1109,16 +1109,29 @@
         let currentSlide1 = 0;
         const track1 = document.getElementById('carouselTrack1');
         const cards1 = document.querySelectorAll('.card-wrapper1');
-        const totalSlides1 = Math.ceil(cards1.length / 3);
         const dotsContainer1 = document.getElementById('carouselDots1');
+        let cardsPerView1 = window.innerWidth <= 768 ? 1 : 3;
+        let totalSlides1 = 0;
 
-        // Crear dots dinámicamente
-        for (let i = 0; i < totalSlides1; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('dot3');
-            if (i === 0) dot.classList.add('active');
-            dot.onclick = () => goToSlide1(i);
-            dotsContainer1.appendChild(dot);
+        function setupCarousel1() {
+            cardsPerView1 = window.innerWidth <= 768 ? 1 : 3;
+            totalSlides1 = Math.ceil(cards1.length / cardsPerView1);
+
+            // Limpiar y crear dots dinámicamente
+            dotsContainer1.innerHTML = '';
+            for (let i = 0; i < totalSlides1; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot3');
+                if (i === 0) dot.classList.add('active');
+                dot.onclick = () => goToSlide1(i);
+                dotsContainer1.appendChild(dot);
+            }
+
+            if (currentSlide1 >= totalSlides1) {
+                currentSlide1 = totalSlides1 - 1;
+            }
+
+            updateCarousel1();
         }
 
         function moveCarousel1(direction) {
@@ -1139,8 +1152,9 @@
         }
 
         function updateCarousel1() {
+            if (!cards1.length) return;
             const cardWidth = cards1[0].offsetWidth + 30;
-            const offset = -currentSlide1 * cardWidth * 3;
+            const offset = -currentSlide1 * cardWidth * cardsPerView1;
             track1.style.transform = `translateX(${offset}px)`;
             
             // Actualizar dots
@@ -1148,6 +1162,9 @@
                 dot.classList.toggle('active', index === currentSlide1);
             });
         }
+
+        // Inicializar carrusel al cargar
+        setupCarousel1();
 
         // Auto-play opcional
         let autoplayInterval1 = setInterval(() => {
@@ -1166,7 +1183,15 @@
         });
 
         // Responsive: actualizar en resize
-        window.addEventListener('resize', updateCarousel1);
+        window.addEventListener('resize', () => {
+            const newCardsPerView1 = window.innerWidth <= 768 ? 1 : 3;
+            if (newCardsPerView1 !== cardsPerView1) {
+                cardsPerView1 = newCardsPerView1;
+                setupCarousel1();
+            } else {
+                updateCarousel1();
+            }
+        });
     </script>
   </section>
 
